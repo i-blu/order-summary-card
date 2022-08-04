@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;600;700&display=swap");
+
+body {
+  background-color: rgb(224 232 255);
+}
+
+.container {
+  background-color: white;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  width: 450px;
+  height: 500px;
+  border-end-start-radius: 15px;
+  border-end-end-radius: 15px;
+  box-shadow: 3px 3px 3px hsl(245, 75%, 52%, 5%);
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.main-image img {
+  width: 100%;
+  user-select: none;
+}
+
+.second-image img {
+  width: 100%;
+  position: absolute;
+  bottom: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  user-select: none;
+}
+
+/* titles start  */
+
+.h1 {
+  position: absolute;
+  top: 10%;
+  left: 28%;
+  font-weight: 900;
+}
+
+.p1 {
+  position: absolute;
+  top: 20%;
+  left: 17%;
+  font-size: 16px;
+  width: 300px;
+  text-align: center;
+  opacity: 0.8;
+}
+/* titles end  */
+
+/* annual-plan start  */
+
+.h4-1 {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  font-weight: 700;
+}
+
+.annual {
+  position: absolute;
+  background-color: hsl(225, 100%, 94%, 30%);
+  top: 35%;
+  left: 12%;
+  width: 75%;
+  height: 20%;
+  border-radius: 15px;
+}
+
+.annual-plan .annual .price {
+  position: absolute;
+  left: 25%;
+  top: 50%;
+  opacity: 0.7;
+}
+
+.annual-plan .annual .change {
+  position: absolute;
+  left: 78%;
+  top: 37%;
+  text-decoration: none;
+  user-select: none;
+}
+
+.annual-plan .annual .change:hover {
+  color: hsl(245deg 54% 59%);
+}
+
+.annual-plan .annual img {
+  position: absolute;
+  top: 25%;
+  left: 6%;
+  user-select: none;
+}
+
+/* annual-plan end  */
+
+/* btns start  */
+
+.btns .btn1 {
+  color: white;
+  position: absolute;
+  top: 65%;
+  left: 12%;
+  background-color: hsl(245, 75%, 52%);
+  width: 75%;
+  height: 10%;
+  border-radius: 15px;
+  box-shadow: 0px 20px 50px -18px hsl(245deg 75% 52%);
+  font-weight: 800;
+  cursor: pointer;
+  border-color: transparent;
+  user-select: none;
+}
+
+.btns .btn1:hover {
+  background-color: hsl(245, 71%, 56%);
+  opacity: 0.7;
+}
+
+.btns .btn2 {
+  position: absolute;
+  top: 85%;
+  left: 36%;
+  font-weight: 900;
+  opacity: 0.7;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* btns end  */
+
+
+@media (max-width: 375px) and (max-width: 1440px) {
+  .main-image img {
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    height: 25%;
+  }
+
+  .container {
+    width: 90%;
+    height: 60%;
+  }
+
+  .h1 {
+    position: absolute;
+    top: 5%;
+    left: 21%;
+    font-weight: 900;
+  }
+
+  .p1 {
+    position: absolute;
+    top: 17%;
+    left: 14%;
+    font-size: 14px;
+    width: 243px;
+    text-align: center;
+    opacity: 0.8;
+  }
+
+  .annual {
+    position: absolute;
+    background-color: hsl(225, 100%, 94%, 30%);
+    top: 38%;
+    left: 5%;
+    width: 87%;
+    height: 20%;
+    border-radius: 15px;
+  }
+
+  .annual-plan .annual img {
+    position: absolute;
+    top: 17%;
+    left: 5%;
+  }
+
+  .h4-1 {
+    position: absolute;
+    top: 25%;
+    left: 28%;
+    font-weight: 700;
+  }
+
+  .annual-plan .annual .price {
+    position: absolute;
+    left: 28%;
+    top: 50%;
+    opacity: 0.7;
+  }
+
+  .btns .btn1 {
+    color: white;
+    position: absolute;
+    top: 65%;
+    left: 7%;
+    background-color: hsl(245, 75%, 52%);
+    width: 86%;
+    height: 13%;
+    border-radius: 15px;
+    box-shadow: 0px 20px 50px -18px hsl(245deg 75% 52%);
+    font-weight: 800;
+    cursor: pointer;
+    border-color: transparent;
+    text-align: center;
+  }
+
+  .btns .btn2 {
+    position: absolute;
+    top: 85%;
+    left: 31%;
+    font-weight: 900;
+    opacity: 0.5;
+    cursor: pointer;
+  }
+}
